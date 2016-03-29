@@ -1,0 +1,40 @@
+% !TEX encoding = UTF-8 Unicode
+% !TEX root = project.tex
+
+\section{Practical Applications}
+\label{sec:practical}
+We envisioned our tool to help employees of an organization who are at different functional levels such as managers, developers, testers et.al. Some of the practical applications of our tool as follows:
+
+\subsection{For resource allocation purposes}
+\label{sec:resource_allocation}
+
+For managers, it is of great help if he knows where to allocate more resources for development and testing. Our tool will give a birds-eye view of the different components in the applications such as packages, classes and methods. It also gives a good idea about the critical sections of the application. Due to the interactive nature of the tool, the manager can select only a particular portion of the application if required and highlight them to get a detailed view.
+
+\subsection{For internal training purposes}
+Usually large size projects have so many different teams and repositories, it becomes really hard to teach technical project design and architecture to new joiners. Even though senior developers try to give a clear explanation using everything they have, it is very hard for the new joiner to understand it completely and clearly. Noodlr can help in this regard immensely. Noodlr can be used for training new joiners in the project and show them the overall design of the whole project. It can also be used to demonstrate the usage of each package, class and method as well and how different classes and methods interact with each other to provide required services in the product.
+
+\subsection{For tracking defect-prone areas}
+As already discussed in above sub section \ref{sec:resource_allocation}, as the size of the repository increases, it becomes very difficult for the managers to allocate resources efficiently. Noodlr can help managers in providing an insight of the most defect-prone areas in the repository and then, managers can allocate resources accordingly. 
+
+\subsection{Development stage: Track dependencies}
+From developers point of view, many a times it becomes extremely hard to use available tools to check call dependencies. For example, Open Call Hierarchy functionality in Eclipse editor is very helpful for developers. But, as the size of the repository grows, it becomes extremely difficult to explore the whole list, especially when that method is being used vastly across the whole project. In this scenario, Noodlr can help developers to see all the call dependencies around a particular method or class. Using Noodlr, developer can focus on call dependencies in a particular focused domain (e.g. inside the package, class etc) as well.
+\subsection{Maintenance stage: Change existing code}
+As a developer, Noodlr is most useful in Maintenance stage of a development cycle. To fix a particular defect, developers can see the call dependency graph and create an estimate of the effects that he might face after implementing the change. In this way, many a times developer will not have to test randomly as he/she can see its drastic effects on the other dependencies. This way, Noodlr improves the productivity of the developer.
+\subsection{Testing Stage: Make regression testing plan}
+Good testers never ignore any possible scenarios where a bug is expected. Noodlr can help testers to create better test cases and test plans based on the dependency graph. As all the affected dependencies can be seen clearly in Noodlr UI, testers can create extra test cases in their regression batch job to make sure that all the dependencies are tested again after every change.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+Maintaining the high quality of a software system is a difficult task, especially for systems where there are several contributors. It becomes even more hard as the size of the project increases. Managers face an increasingly difficult task of assigning resources to the right focus area based on its complexity. They face the challenge of upholding a high level of quality given the number of developers that have the right knowledge to work on these systems. We presented the Noodlr tool that helps managers, developers and testers gain a detailed understanding of the system in terms of the various components of the system and their inter-dependencies. We developed the Noodlr tool as a web-based tool which does not require any installation to use and is user-friendly, interactive and intuitive. We evaluated the validity of our work by testing our tool against several project samples from Github and found that it produces results with reasonable precision and recall. Our hope is that this work will help people from different functional levels in their ability to function better.\\
+
+\subsection{Future Work}
+\label{sec:future}
+In this work, visualizing projects with size more than a particular limit was difficult as it created a very dense graph with D3's custom Sankey style. As an improvement in future, we would like to use another style or even a different visualization library to make the user experience seamless irrespective of the size of the project. \\
+
+Currently, we have not implemented a search functionality for files, packages, methods or any other items in the project being visualized. As a future enhancement, we would like to implement a full-fledged search feature in this tool. \\
+
+Currently the support is limited to Java based projects as we are using tools that only work with Java. We would like to incorporate support for projects that are written in other programming languages in future.\\
+
+We would also like to integrate our tool as a plugin into different IDEs such as Eclipse\footnote{\url{https://eclipse.org/}}, Intellij Idea\footnote{\url{https://www.jetbrains.com/idea/}}, Netbeans\footnote{\url{https://netbeans.org/}} et.al.
+

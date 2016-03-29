@@ -1,0 +1,10 @@
+% !TEX encoding = UTF-8 Unicode
+% !TEX root = project.tex
+
+\subsection*{Abstract}
+
+In a software development setup, resources are the most expensive component that are involved at every stage of the software development cycle. Allocating resources is a critical decision that is taken by the managers and the higher management. In making such a critical decision, one needs to have a good understanding of the system, its complexities and dependencies. At times, even though managers have good functional domain knowledge, they lack technical or product/software specific knowledge. Hence, knowingly or unknowingly, they take wrong decisions about allocating resources to the module which needs more attention, which affect the overall cost of the project. Maintenance is the stage in the software development cycle where the maximum time is spent and it is also the most expensive. Hence it needs the most optimized resource allocation. At this stage, wrongly allocated resources might affect overall budget of the project drastically. \\
+
+For better decision making in above situations, we implemented a tool called Noodlr, which gives an insight of the source code repository and helps managers to make better decisions. Noodlr is an open dependency graph generator tool, implemented in D3.js~\cite{d3js} in the frontend and Java in the backend, shows the overall design and architecture of the project. Noodlr shows the most critical areas where the probability of getting defects is more using Kosaraju's strongly connected components algorithm~\cite{sharir1981strong}. Noodlr can be used in development, maintenance and testing stages of a software project. Noodlr can be also be used for training purposes to give an idea about the overall project structure and file dependencies.
+
+\keywords{dependency graph, strongly connected components, maintenance, testing.}
