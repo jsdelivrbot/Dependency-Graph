@@ -1,0 +1,16 @@
+[
+  {"source":"c1", "target":"c2", "value":"1"},
+  {"source":"c3", "target":"c2", "value":"1"},
+  {"source":8, "target":28, "value":"1"},
+  {"source":17, "target":18, "value":"1"},
+  {"source":22, "target":24, "value":"1"},
+  {"source":3, "target":13, "value":"1"},
+  {"source":24, "target":24, "value":"1"},
+  {"source":5, "target":4, "value":"1"},
+  {"source":"c1_m2", "target":"c3_m1", "value":"1"},
+  {"source":"c1_m3", "target":"c3_m2", "value":"1"},
+  {"source":"c2_m1", "target":"c1_m2", "value":"1"},
+  {"source":"c2_m1", "target":"c3_m3", "value":"1"},
+  {"source":"c3_m2", "target":"c2_m3", "value":"1"},
+  {"source":"c2_m3", "target":"c2_m2", "value":"1"}  
+]

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html >
+  <head>
+	<style>
+		body { 
+			display: block;
+			padding-top: 130px;
+			padding-left: 150px;
+		}
+	</style>
+    <meta charset="UTF-8">
+    <title>Noodlr</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700'>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <header class='masthead'>
+		<div class='brand-container'>
+			<a href='#'>
+				<span class='brand-initials'>Noodlr</span>
+				<span class='brand-name'>Is your code Noodle free?</span>
+			</a>
+		</div>
+		<nav>
+			<div class='nav-container'>
+			<div>
+				<input id='slider1' name='slider1' type='checkbox'>
+				<label class='slide has-child' for='slider1'>
+				<span class='element'>Demo</span>
+				<span class='name'>A demo project</span>
+				</label>
+				<div class='child-menu'>
+				<a onclick="changeFrame('dependency-graph3/index.html')"  href='#'>Open dependency graph</a>
+				</div>
+			</div>
+			<div>
+				<input id='slider2' name='slider2' type='checkbox'>
+				<label class='slide has-child' for='slider2'>
+				<span class='element'>Evaluation</span>
+				<span class='name'>Retrofit by Square Inc</span>
+				</label>
+				<div class='child-menu'>
+				<a onclick="changeFrame('dependency-graph4/index.html')"  href='#'>Open dependency graph</a>
+				<a onclick="changeFrame('dependency-graph4/index1.html')"  href='#'>Strongly connected dependency graph</a>
+				</div>
+			</div>
+			<div>
+				<input id='slider3' name='slider3' type='checkbox'>
+				<label class='slide has-child' for='slider3'>
+				<span class='element'>Evaluation</span>
+				<span class='name'>Twitter4j by Twitter</span>
+				</label>
+				<div class='child-menu'>
+				<a onclick="changeFrame('dependency-graph5/index.html')"  href='#'>Open dependency graph</a>
+				<a onclick="changeFrame('dependency-graph5/index1.html')"  href='#'>Strongly connected dependency graph</a>
+				</div>
+			</div>
+			<div>
+				<input id='slider4' name='slider4' type='checkbox'>
+				<label class='slide has-child' for='slider4'>
+				<span class='element'>Training</span>
+				<span class='name'>Training new joiners</span>
+				</label>
+				<div class='child-menu'>
+				<a onclick="changeFrame('dependency-graph0/index.html')"  href='#'>Training based Open dependency graph</a>
+				</div>
+			</div>
+			</div>
+		</nav>
+		<div class='social-container'>
+			<span>
+			<a class='social-roll github' href='#'></a>
+			</span>
+			<span>
+			<a class='social-roll twitter' href='#'></a>
+			</span>
+			<span>
+			<a class='social-roll linkedin' href='#'></a>
+			</span>
+			<span>
+			<a class='social-roll rss' href='#'></a>
+			</span>
+		</div>
+	</header>
+	
+  </head>
+
+  <body>
+  
+	<script type="text/javascript">
+		function changeFrame(a){
+			var el = document.getElementById('ifrm');
+			el.src = a;
+		}
+	</script>
+  
+	<iframe id="ifrm" src="dependency-graph3/index.html"  height="800" width="1755"></iframe>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src="js/index.js"></script>
+	
+  </body>
+</html>
